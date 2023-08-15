@@ -1,13 +1,16 @@
+import { useState } from "react";
 import "./App.css";
 import Testimonial from "./components/Testimonial";
+import data from "./constants/data";
 
 function App() {
+  const [index, setIndex] = useState(0);
   return (
     <div className="App">
-      <div>
-        <h1>Our Testimonials</h1>
-        <div></div>
-        <Testimonial />
+      <div className="inner-div">
+        <p className="heading">Our Testimonials</p>
+        <div className="underline-div"></div>
+        <Testimonial data={data} index={index} setIndex={setIndex} />
       </div>
     </div>
   );
