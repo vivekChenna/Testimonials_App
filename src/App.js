@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <div className="inner-div">
-        <p className="heading">Our Testimonials</p>
-        <div className="underline-div"></div>
+        <div className="underline-heading">
+          <p className="heading">Our Testimonials</p>
+          <div className="underline-div"></div>
+        </div>
         <Testimonial data={data} index={index} setIndex={setIndex} />
       </div>
     </div>

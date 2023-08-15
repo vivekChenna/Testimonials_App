@@ -24,16 +24,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 .underline-div {
   height: 4px;
-  width: 9rem;
+  width: 12rem;
   background-color: rgb(186, 112, 255);
+}
+
+.underline-heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Testimonial {
   background-color: white;
+  transition: all;
+  transition-duration: 300ms;
+  border-radius: 5px;
+}
+
+.Testimonial:hover {
+  box-shadow: 5px 5px 5px 5px #d0c9c9;
 }
 
 .card {
@@ -42,10 +57,11 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* flex-wrap: wrap; */
   max-width: 750px;
   gap: 0.5rem;
-  height: 300px;
+  height: 310px;
 }
 
 .img-div {
@@ -75,8 +91,9 @@
 }
 
 .info-name {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
+  letter-spacing: 0.05rem;
 }
 
 .info-role {
@@ -106,4 +123,11 @@
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
+  transition: ease-in;
+  transition-duration: 0.3s;
+}
+
+.surprise-btn:hover {
+  background-color: blueviolet;
+  outline: none;
 }
